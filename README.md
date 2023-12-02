@@ -207,21 +207,42 @@ Sans plus tarder, mettons en place un formulaire d'inscription pour notre site w
 ```php
 # index.php
 
-<form action="signup.php" method="post">
-    <fieldset>
-        <legend>Inscription</legend>
-        <input type="text" name="name" placeholder="Martin" required>
-    </fieldset>
-    <fieldset>
-        <legend>Votre âge</legend>
-        <input type="number" name="number" placeholder="32" required>
-    </fieldset>
-    <fieldset>
-        <legend>Votre 1er dépôt</legend>
-        <input type="number" name="number" placeholder="1900.50" required>
-    </fieldset>
-    <input type="submit" value="S'inscrire">
-</form>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in PHP</title>
+    <link rel="icon" href="https://api.iconify.design/logos:php-alt.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Inter', sans-serif;">
+    <div class="container" style="padding:1em; text-align:center;">
+        <kbd>PHP STARTER</kbd>
+    </div>
+    <main class="container">
+        <form action="signup.php" method="post">
+            <fieldset>
+                <legend>Inscription</legend>
+                <input type="text" name="name" placeholder="Martin" required>
+            </fieldset>
+            <fieldset>
+                <legend>Votre âge</legend>
+                <input type="number" name="age" placeholder="32" required>
+            </fieldset>
+            <fieldset>
+                <legend>Votre 1er dépôt</legend>
+                <input type="number" name="amount" placeholder="1900.50" required>
+            </fieldset>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </main>
+</body>
+
+</html>
 ```
 
 Ici, on a un formulaire avec trois champs : nom, âge et montant du premier dépôt. On a aussi un bouton pour soumettre le formulaire. On a ajouté un attribut `action` à la balise `form` pour indiquer l'URL de la page qui va traiter les données du formulaire. On a aussi ajouté un attribut `method` pour indiquer la méthode HTTP à utiliser pour envoyer les données du formulaire. Dans notre cas, on utilise la méthode `post`.
