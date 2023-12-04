@@ -28,7 +28,7 @@ $communs = [];
 for ($i = 0; $i < count($tableau1); $i++) {
     for ($j = 0; $j < count($tableau2); $j++) {
         if ($tableau1[$i] == $tableau2[$j]) {
-            $communs[] = $tableau1[$i];
+            $communs[] .= $tableau1[$i];
         }
     }
 }
