@@ -1,10 +1,9 @@
-# Forum PHP
+# Formulaire PHP
 
-## Objectifs
+## Objectif
 
-À travers ce petit projet, vous allez apprendre :
-- à fetcher des données depuis une API REST
-- à traiter ces données
-- à les afficher dans une page web :
-  - en utilisant des templates
-  - en utilisant des composants
+À travers ce formulaire, nous allons apprendre à :
+- Créer un formulaire HTML
+- Récupérer les données d'un formulaire en PHP
+- Gérer une requête POST
+- Valider les données d'un formulaire
